@@ -1,5 +1,5 @@
 "This file was created by using 'touch ~/.vimrc
-"PLugins located @ ~/.vim/pack/vendor/start
+"Plugins located @ ~/.vim/pack/vendor/start
 
 "SETS 
 set number		"Adds line numbers
@@ -21,22 +21,22 @@ set nowrap		"Don't wrap around screen
 set undodir=~/.vim/vim-undo		"Keep directory of backup files
 set undofile		"Keep a file for every file
 set incsearch		"Search better
-
+set bg=dark 		"Use gruvbox in darkmode 
 
 "VIM-PLUGINS
 call plug#begin('~/.vim/plugged/')
 
 Plug 'preservim/nerdtree'
 Plug 'tpope/vim-fugitive'
-Plug 'YorickPeterse/happy_hacking.vim'
-Plug 'ycm-core/YouCompleteMe'
 Plug 'mbbill/undotree'
+Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
 "BEAUTY
 syntax on
-colorscheme happy_hacking
+colorscheme gruvbox 
 
 "AUTOCMDS
 "autocmd VimEnter * NERDTree
