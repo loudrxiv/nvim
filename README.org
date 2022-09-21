@@ -1,3 +1,18 @@
-* This contains BOTH my old vimrc and new nvim directory
+* This contains BOTH my old vimrc and nvim directory
 - As neovim now follows XDG_CONFIG guidelines, which your boi loves.
 - Don't get it twisted though, there is barely anything in here, if you want to see real power, may I refer you to my DOOM Emacs' config files
+
+* How can I use this?
+** Step 1: Clone to XDG_CONFIG complient area
+#+begin_src bash
+cd $HOME
+cd .config
+git clone https://github.com/loudrxiv/nvim.git
+#+end_src
+** Step 2: Install some plugin mananger & decide on init.vim vs. init.lua
+#+begin_src bash
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+touch ~/.config/nvim/init.vim
+#+end_src
+** Step 3: Customize init.vim
