@@ -1,0 +1,3 @@
+* This contains BOTH my old vimrc and new nvim directory
+- As neovim now follows XDG_CONFIG guidelines, which your boi loves.
+- Don't get it twisted though, there is barely anything in here, if you want to see real power, may I refer you to my DOOM Emacs' config files
